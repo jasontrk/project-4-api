@@ -10,9 +10,51 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20170723111450) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "dislikes", id: false, force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "medium_id", null: false
+    t.index ["medium_id", "user_id"], name: "index_dislikes_on_medium_id_and_user_id"
+    t.index ["user_id", "medium_id"], name: "index_dislikes_on_user_id_and_medium_id"
+  end
+
+  create_table "likes", id: false, force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "medium_id", null: false
+    t.index ["medium_id", "user_id"], name: "index_likes_on_medium_id_and_user_id"
+    t.index ["user_id", "medium_id"], name: "index_likes_on_user_id_and_medium_id"
+  end
+
+  create_table "media", force: :cascade do |t|
+    t.integer "tmdb_id"
+    t.string "name"
+    t.string "overview"
+    t.string "poster_path"
+    t.string "first_air_date"
+    t.integer "genre_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "saved_medium", id: false, force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "medium_id", null: false
+    t.index ["medium_id", "user_id"], name: "index_saved_medium_on_medium_id_and_user_id"
+    t.index ["user_id", "medium_id"], name: "index_saved_medium_on_user_id_and_medium_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "firstname"
+    t.string "lastname"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "email"
+    t.string "password_digest"
+  end
 
 end
