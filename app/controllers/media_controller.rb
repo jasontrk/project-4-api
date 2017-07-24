@@ -46,6 +46,6 @@ class MediaController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def medium_params
-      params.require(:medium).permit(:tmdb_id, :name, :overview, :poster_path, :first_air_date, :genre_id)
+      params.require(:medium).permit(:tmdb_id, :name, :overview, :poster_path, :first_air_date, :genre_id, likes_ids:[])
     end
 end

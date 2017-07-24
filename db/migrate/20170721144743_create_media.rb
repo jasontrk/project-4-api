@@ -6,7 +6,7 @@ class CreateMedia < ActiveRecord::Migration[5.1]
       t.string :overview
       t.string :poster_path
       t.string :first_air_date
-      t.integer :genre_id
+      t.references :user, foreign_key: true
 
       t.timestamps
     end

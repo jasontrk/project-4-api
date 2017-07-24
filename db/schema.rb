@@ -35,16 +35,17 @@ ActiveRecord::Schema.define(version: 20170723111450) do
     t.string "overview"
     t.string "poster_path"
     t.string "first_air_date"
-    t.integer "genre_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_media_on_user_id"
   end
 
-  create_table "saved_medium", id: false, force: :cascade do |t|
+  create_table "saves", id: false, force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "medium_id", null: false
-    t.index ["medium_id", "user_id"], name: "index_saved_medium_on_medium_id_and_user_id"
-    t.index ["user_id", "medium_id"], name: "index_saved_medium_on_user_id_and_medium_id"
+    t.index ["medium_id", "user_id"], name: "index_saves_on_medium_id_and_user_id"
+    t.index ["user_id", "medium_id"], name: "index_saves_on_user_id_and_medium_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -57,4 +58,5 @@ ActiveRecord::Schema.define(version: 20170723111450) do
     t.string "password_digest"
   end
 
+  add_foreign_key "media", "users"
 end

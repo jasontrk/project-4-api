@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :media
   scope :api do
+    resources :media
     resources :users
   end
 end

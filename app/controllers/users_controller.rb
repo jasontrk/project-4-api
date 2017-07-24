@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   def index
     @users = User.all
 
-    render json: @users
+    render json: @users, include: ['liked_media', 'medium_created', 'disliked_media', 'saved_media']
   end
 
   # GET /users/1
@@ -46,6 +46,6 @@ class UsersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def user_params
-      params.require(:user).permit(:username, :firstname, :lastname)
+      params.require(:user).permit(:username, :email, liked_media_ids:[], disliked_media_ids:[], saved_media_ids:[])
     end
 end

@@ -777,3 +777,1754 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 24ms (Views: 10.8ms | ActiveRecord: 12.5ms)
 
 
+  [1m[36mMedium Load (0.6ms)[0m  [1m[34mSELECT  "media".* FROM "media" ORDER BY "media"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMedium Load (0.8ms)[0m  [1m[34mSELECT  "media".* FROM "media" ORDER BY "media"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1 LIMIT $2[0m  [["medium_id", 6], ["LIMIT", 11]]
+  [1m[36mMedium Load (0.9ms)[0m  [1m[34mSELECT  "media".* FROM "media" ORDER BY "media"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1 LIMIT $2[0m  [["medium_id", 1], ["LIMIT", 11]]
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (108.1ms)[0m  [1m[35mTRUNCATE users RESTART IDENTITY CASCADE[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "firstname", "lastname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "mickyginger"], ["firstname", "Mike"], ["lastname", "Hayden"], ["created_at", "2017-07-23 16:55:21.173226"], ["updated_at", "2017-07-23 16:55:21.173226"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "firstname", "lastname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "eisacke"], ["firstname", "Emily"], ["lastname", "Isacke"], ["created_at", "2017-07-23 16:55:21.179934"], ["updated_at", "2017-07-23 16:55:21.179934"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "firstname", "lastname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "markyjangles"], ["firstname", "Marc"], ["lastname", "De Vois"], ["created_at", "2017-07-23 16:55:21.184104"], ["updated_at", "2017-07-23 16:55:21.184104"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (15.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (6.3ms)[0m  [1m[35mTRUNCATE users RESTART IDENTITY CASCADE[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "firstname", "lastname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "mickyginger"], ["firstname", "Mike"], ["lastname", "Hayden"], ["created_at", "2017-07-23 16:56:17.785356"], ["updated_at", "2017-07-23 16:56:17.785356"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "firstname", "lastname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "eisacke"], ["firstname", "Emily"], ["lastname", "Isacke"], ["created_at", "2017-07-23 16:56:17.790025"], ["updated_at", "2017-07-23 16:56:17.790025"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "firstname", "lastname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "markyjangles"], ["firstname", "Marc"], ["lastname", "De Vois"], ["created_at", "2017-07-23 16:56:17.792853"], ["updated_at", "2017-07-23 16:56:17.792853"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (27.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (28.8ms)[0m  [1m[35mTRUNCATE users RESTART IDENTITY CASCADE[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "firstname", "lastname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "mickyginger"], ["firstname", "Mike"], ["lastname", "Hayden"], ["created_at", "2017-07-23 16:56:57.850065"], ["updated_at", "2017-07-23 16:56:57.850065"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "firstname", "lastname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "eisacke"], ["firstname", "Emily"], ["lastname", "Isacke"], ["created_at", "2017-07-23 16:56:57.854987"], ["updated_at", "2017-07-23 16:56:57.854987"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "firstname", "lastname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "markyjangles"], ["firstname", "Marc"], ["lastname", "De Vois"], ["created_at", "2017-07-23 16:56:57.858553"], ["updated_at", "2017-07-23 16:56:57.858553"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "media" ("name", "overview", "first_air_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "300"], ["overview", "bla bla bla"], ["first_air_date", "2014-07-13"], ["created_at", "2017-07-23 16:56:57.888415"], ["updated_at", "2017-07-23 16:56:57.888415"]]
+  [1m[35m (10.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "media" ("name", "overview", "first_air_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Gladiator"], ["overview", "bla bla bla"], ["first_air_date", "2013-04-11"], ["created_at", "2017-07-23 16:56:57.924802"], ["updated_at", "2017-07-23 16:56:57.924802"]]
+  [1m[35m (14.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "media" ("name", "overview", "first_air_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Kingdom Of Heaven"], ["overview", "bla bla bla"], ["first_air_date", "2012-02-02"], ["created_at", "2017-07-23 16:56:57.943218"], ["updated_at", "2017-07-23 16:56:57.943218"]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 17:57:28 +0100
+  [1m[35m (15.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 88ms (Views: 32.8ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 17:58:08 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 1.9ms)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMedium Load (0.7ms)[0m  [1m[34mSELECT  "media".* FROM "media" ORDER BY "media"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "likes" ("user_id", "medium_id") VALUES ($1, $2)[0m  [["user_id", 1], ["medium_id", 9]]
+  [1m[35m (18.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMedium Load (1.0ms)[0m  [1m[34mSELECT  "media".* FROM "media" INNER JOIN "likes" ON "media"."id" = "likes"."medium_id" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mMedium Load (0.9ms)[0m  [1m[34mSELECT  "media".* FROM "media" ORDER BY "media"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1 LIMIT $2[0m  [["medium_id", 9], ["LIMIT", 11]]
+  [1m[36mMedium Load (0.6ms)[0m  [1m[34mSELECT  "media".* FROM "media" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMedium Load (1.1ms)[0m  [1m[34mSELECT  "media".* FROM "media" INNER JOIN "likes" ON "media"."id" = "likes"."medium_id" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMedium Load (1.2ms)[0m  [1m[34mSELECT  "media".* FROM "media" INNER JOIN "likes" ON "media"."id" = "likes"."medium_id" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "ajaylard"], ["created_at", "2017-07-23 17:13:08.865243"], ["updated_at", "2017-07-23 17:13:08.865243"], ["email", "ajay.lard@ga.co"]]
+  [1m[35m (33.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "ajaylard"], ["created_at", "2017-07-23 17:16:27.702857"], ["updated_at", "2017-07-23 17:16:27.702857"], ["email", "ajay.lard@ga.co"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "ajaylard"], ["created_at", "2017-07-23 17:17:06.669054"], ["updated_at", "2017-07-23 17:17:06.669054"], ["email", "ajay.lard@ga.co"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "ruthlessamo"], ["created_at", "2017-07-23 17:17:51.738599"], ["updated_at", "2017-07-23 17:17:51.738599"], ["email", "will.hilton@ga.co"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "jason"], ["created_at", "2017-07-23 17:19:22.043368"], ["updated_at", "2017-07-23 17:19:22.043368"], ["email", "jason@hotmail.co"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMedium Load (0.8ms)[0m  [1m[34mSELECT  "media".* FROM "media" WHERE "media"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "likes" ("user_id", "medium_id") VALUES ($1, $2)[0m  [["user_id", 6], ["medium_id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1 LIMIT $2[0m  [["medium_id", 1], ["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "likes" ("user_id", "medium_id") VALUES ($1, $2)[0m  [["user_id", 8], ["medium_id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1 LIMIT $2[0m  [["medium_id", 1], ["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "likes" ("user_id", "medium_id") VALUES ($1, $2)[0m  [["user_id", 7], ["medium_id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1 LIMIT $2[0m  [["medium_id", 1], ["LIMIT", 11]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1 LIMIT $2[0m  [["medium_id", 1], ["LIMIT", 11]]
+  [1m[36mLikedMedium Load (0.6ms)[0m  [1m[34mSELECT  "likes".* FROM "likes" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", 8], ["LIMIT", 11]]
+  [1m[36mLikedMedium Load (0.8ms)[0m  [1m[34mSELECT  "likes".* FROM "likes" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", 8], ["LIMIT", 11]]
+  [1m[36mLikedMedium Load (1.2ms)[0m  [1m[34mSELECT  "likes".* FROM "likes" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", 8], ["LIMIT", 11]]
+  [1m[36mLikedMedium Load (0.8ms)[0m  [1m[34mSELECT  "likes".* FROM "likes" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", 8], ["LIMIT", 11]]
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 18:41:53 +0100
+  [1m[35m (17.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 104ms (Views: 30.5ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 18:42:17 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 82ms (Views: 34.1ms | ActiveRecord: 47.2ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 18:42:27 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 18:42:46 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 18:43:44 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 18:43:52 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 18:44:12 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 18:44:15 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 18:44:33 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 18:45:22 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 18:45:27 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 18:45:44 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 18:46:01 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 18:46:06 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 18:53:01 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 18:53:02 +0100
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/media" for 127.0.0.1 at 2017-07-23 18:53:55 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/media"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.0) lib/rack/cors.rb:93:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/medium" for 127.0.0.1 at 2017-07-23 18:54:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/medium"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.0) lib/rack/cors.rb:93:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/media" for 127.0.0.1 at 2017-07-23 18:54:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/media"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.0) lib/rack/cors.rb:93:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/like" for 127.0.0.1 at 2017-07-23 18:54:14 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/like"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.0) lib/rack/cors.rb:93:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 18:54:20 +0100
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/media" for 127.0.0.1 at 2017-07-23 18:54:27 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/media"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.0) lib/rack/cors.rb:93:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/liked_med" for 127.0.0.1 at 2017-07-23 18:59:17 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/liked_med"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.0) lib/rack/cors.rb:93:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/users/" for 127.0.0.1 at 2017-07-23 18:59:26 +0100
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 18:59:33 +0100
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/media" for 127.0.0.1 at 2017-07-23 19:00:24 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/media"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.0) lib/rack/cors.rb:93:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/media" for 127.0.0.1 at 2017-07-23 19:20:35 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/media"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.0) lib/rack/cors.rb:93:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 19:22:33 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 443ms (Views: 265.1ms | ActiveRecord: 117.9ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 19:22:48 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 19:22:54 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 19:23:02 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 19:23:10 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 9ms (Views: 4.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 19:23:13 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/media" for 127.0.0.1 at 2017-07-23 19:23:18 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/media"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.0) lib/rack/cors.rb:93:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 19:23:21 +0100
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 19:23:32 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 19:23:48 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 19:23:50 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 19:23:54 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 19:23:58 +0100
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/media" for 127.0.0.1 at 2017-07-23 19:24:02 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/media"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.0) lib/rack/cors.rb:93:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/medium" for 127.0.0.1 at 2017-07-23 19:27:44 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/medium"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.0) lib/rack/cors.rb:93:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/finalProject/users" for 127.0.0.1 at 2017-07-23 19:28:02 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/finalProject/users"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.0) lib/rack/cors.rb:93:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/finalProject/users" for 127.0.0.1 at 2017-07-23 19:28:06 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/finalProject/users"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.0) lib/rack/cors.rb:93:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 19:28:12 +0100
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/users/media" for 127.0.0.1 at 2017-07-23 19:28:19 +0100
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"media"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 30ms (ActiveRecord: 1.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=media):
+  
+app/controllers/users_controller.rb:44:in `set_user'
+Started GET "/api/media" for 127.0.0.1 at 2017-07-23 19:28:26 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/media"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.0) lib/rack/cors.rb:93:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/mediums" for 127.0.0.1 at 2017-07-23 19:29:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/mediums"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.0) lib/rack/cors.rb:93:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/media" for 127.0.0.1 at 2017-07-23 19:29:36 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/api/media"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.0) lib/rack/cors.rb:93:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 19:29:52 +0100
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/users/liked_m" for 127.0.0.1 at 2017-07-23 19:30:16 +0100
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"liked_m"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=liked_m):
+  
+app/controllers/users_controller.rb:44:in `set_user'
+Started GET "/api/users/likers" for 127.0.0.1 at 2017-07-23 19:30:24 +0100
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"likers"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 6ms (ActiveRecord: 1.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=likers):
+  
+app/controllers/users_controller.rb:44:in `set_user'
+Started GET "/api/users/likes" for 127.0.0.1 at 2017-07-23 19:30:26 +0100
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"likes"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=likes):
+  
+app/controllers/users_controller.rb:44:in `set_user'
+Started GET "/api/users/media_liked" for 127.0.0.1 at 2017-07-23 19:30:32 +0100
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"media_liked"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=media_liked):
+  
+app/controllers/users_controller.rb:44:in `set_user'
+Started GET "/api/users/1" for 127.0.0.1 at 2017-07-23 19:30:40 +0100
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at", "email") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "jason"], ["created_at", "2017-07-23 18:35:54.821084"], ["updated_at", "2017-07-23 18:35:54.821084"], ["email", "jason@hotmail.co"]]
+  [1m[35m (11.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMedium Load (0.8ms)[0m  [1m[34mSELECT  "media".* FROM "media" WHERE "media"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "likes" ("user_id", "medium_id") VALUES ($1, $2)[0m  [["user_id", 9], ["medium_id", 3]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1 LIMIT $2[0m  [["medium_id", 3], ["LIMIT", 11]]
+Started GET "/api/media" for 127.0.0.1 at 2017-07-23 20:13:35 +0100
+  [1m[35m (16.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MediaController#index as */*
+  Parameters: {"medium"=>{}}
+  [1m[36mMedium Load (0.8ms)[0m  [1m[34mSELECT "media".* FROM "media"[0m
+Completed 200 OK in 36ms (Views: 30.7ms | ActiveRecord: 10.1ms)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2017-07-23 20:29:23 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 4.6ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:49:in `user_params'
+app/controllers/users_controller.rb:18:in `create'
+Started POST "/api/media" for 127.0.0.1 at 2017-07-23 20:29:38 +0100
+Processing by MediaController#create as */*
+  Parameters: {"medium"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 22.4ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: medium):
+  
+app/controllers/media_controller.rb:49:in `medium_params'
+app/controllers/media_controller.rb:18:in `create'
+Started POST "/api/media" for 127.0.0.1 at 2017-07-23 20:32:39 +0100
+Processing by MediaController#create as */*
+  Parameters: {"medium"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 3.1ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: medium):
+  
+app/controllers/media_controller.rb:49:in `medium_params'
+app/controllers/media_controller.rb:18:in `create'
+Started POST "/api/media" for 127.0.0.1 at 2017-07-23 20:33:19 +0100
+Processing by MediaController#create as */*
+  Parameters: {"medium"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: medium):
+  
+app/controllers/media_controller.rb:49:in `medium_params'
+app/controllers/media_controller.rb:18:in `create'
+Started POST "/api/media" for 127.0.0.1 at 2017-07-23 20:35:10 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MediaController#create as */*
+  Parameters: {"medium"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 4.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: medium):
+  
+app/controllers/media_controller.rb:49:in `medium_params'
+app/controllers/media_controller.rb:18:in `create'
+Started POST "/api/user" for 127.0.0.1 at 2017-07-23 20:35:14 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/api/user"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.0) lib/rack/cors.rb:93:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/users" for 127.0.0.1 at 2017-07-23 20:36:58 +0100
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 18.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:49:in `user_params'
+app/controllers/users_controller.rb:18:in `create'
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 20:54:02 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (16.86ms)
+Completed 500 Internal Server Error in 454ms (ActiveRecord: 9.2ms)
+
+
+  
+NoMethodError (undefined method `media_created' for #<User:0x007fae0de01268>
+Did you mean?  medium_created
+               medium_created=):
+  
+app/controllers/users_controller.rb:8:in `index'
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 20:56:06 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mLikedMedium Load (1.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers]   [1m[36mLikedMedium Load (1.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.7ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.6ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.7ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 5]]
+[active_model_serializers]   [1m[36mLikedMedium Load (1.0ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 6]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (2.5ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (1.8ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 9]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (291.83ms)
+Completed 200 OK in 438ms (Views: 349.6ms | ActiveRecord: 29.4ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 20:56:30 +0100
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mLikedMedium Load (1.2ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.5ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 5]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.7ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 6]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.7ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 9]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (54.49ms)
+Completed 200 OK in 91ms (Views: 59.2ms | ActiveRecord: 31.4ms)
+
+
+Started GET "/api/media" for 127.0.0.1 at 2017-07-23 20:56:43 +0100
+Processing by MediaController#index as */*
+  Parameters: {"medium"=>{}}
+  [1m[36mMedium Load (1.1ms)[0m  [1m[34mSELECT "media".* FROM "media"[0m
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 1]]
+[active_model_serializers]   [1m[36mUser Load (30.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 1]]
+[active_model_serializers]   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saved_medium" ON "users"."id" = "saved_medium"."user_id" WHERE "saved_medium"."medium_id" = $1[0m  [["medium_id", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 2]]
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 2]]
+[active_model_serializers]   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saved_medium" ON "users"."id" = "saved_medium"."user_id" WHERE "saved_medium"."medium_id" = $1[0m  [["medium_id", 2]]
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 3]]
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 3]]
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saved_medium" ON "users"."id" = "saved_medium"."user_id" WHERE "saved_medium"."medium_id" = $1[0m  [["medium_id", 3]]
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 4]]
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 4]]
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saved_medium" ON "users"."id" = "saved_medium"."user_id" WHERE "saved_medium"."medium_id" = $1[0m  [["medium_id", 4]]
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 5]]
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 5]]
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saved_medium" ON "users"."id" = "saved_medium"."user_id" WHERE "saved_medium"."medium_id" = $1[0m  [["medium_id", 5]]
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 6]]
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 6]]
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saved_medium" ON "users"."id" = "saved_medium"."user_id" WHERE "saved_medium"."medium_id" = $1[0m  [["medium_id", 6]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 7]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 7]]
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saved_medium" ON "users"."id" = "saved_medium"."user_id" WHERE "saved_medium"."medium_id" = $1[0m  [["medium_id", 7]]
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 8]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 8]]
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saved_medium" ON "users"."id" = "saved_medium"."user_id" WHERE "saved_medium"."medium_id" = $1[0m  [["medium_id", 8]]
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 9]]
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 9]]
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saved_medium" ON "users"."id" = "saved_medium"."user_id" WHERE "saved_medium"."medium_id" = $1[0m  [["medium_id", 9]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (247.77ms)
+Completed 200 OK in 291ms (Views: 237.7ms | ActiveRecord: 59.3ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 20:56:51 +0100
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.7ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 5]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 6]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 9]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (37.31ms)
+Completed 200 OK in 41ms (Views: 36.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/media" for 127.0.0.1 at 2017-07-23 20:56:59 +0100
+Processing by MediaController#index as */*
+  Parameters: {"medium"=>{}}
+  [1m[36mMedium Load (0.8ms)[0m  [1m[34mSELECT "media".* FROM "media"[0m
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saved_medium" ON "users"."id" = "saved_medium"."user_id" WHERE "saved_medium"."medium_id" = $1[0m  [["medium_id", 1]]
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 2]]
+[active_model_serializers]   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 2]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saved_medium" ON "users"."id" = "saved_medium"."user_id" WHERE "saved_medium"."medium_id" = $1[0m  [["medium_id", 2]]
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 3]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 3]]
+[active_model_serializers]   [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saved_medium" ON "users"."id" = "saved_medium"."user_id" WHERE "saved_medium"."medium_id" = $1[0m  [["medium_id", 3]]
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 4]]
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 4]]
+[active_model_serializers]   [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saved_medium" ON "users"."id" = "saved_medium"."user_id" WHERE "saved_medium"."medium_id" = $1[0m  [["medium_id", 4]]
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 5]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 5]]
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saved_medium" ON "users"."id" = "saved_medium"."user_id" WHERE "saved_medium"."medium_id" = $1[0m  [["medium_id", 5]]
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 6]]
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 6]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saved_medium" ON "users"."id" = "saved_medium"."user_id" WHERE "saved_medium"."medium_id" = $1[0m  [["medium_id", 6]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 7]]
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 7]]
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saved_medium" ON "users"."id" = "saved_medium"."user_id" WHERE "saved_medium"."medium_id" = $1[0m  [["medium_id", 7]]
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 8]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 8]]
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saved_medium" ON "users"."id" = "saved_medium"."user_id" WHERE "saved_medium"."medium_id" = $1[0m  [["medium_id", 8]]
+[active_model_serializers]   [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 9]]
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 9]]
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saved_medium" ON "users"."id" = "saved_medium"."user_id" WHERE "saved_medium"."medium_id" = $1[0m  [["medium_id", 9]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (128.43ms)
+Completed 200 OK in 134ms (Views: 112.9ms | ActiveRecord: 20.2ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 20:57:12 +0100
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.6ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.2ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 5]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 6]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.6ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 9]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (46.23ms)
+Completed 200 OK in 49ms (Views: 44.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 20:57:54 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 5]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 6]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 9]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (31.42ms)
+Completed 200 OK in 39ms (Views: 33.0ms | ActiveRecord: 5.0ms)
+
+
+  [1m[36mMedium Load (0.7ms)[0m  [1m[34mSELECT  "media".* FROM "media" WHERE "media"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "dislikes" ("user_id", "medium_id") VALUES ($1, $2)[0m  [["user_id", 5], ["medium_id", 5]]
+  [1m[35m (12.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1 LIMIT $2[0m  [["medium_id", 5], ["LIMIT", 11]]
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 21:03:47 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mLikedMedium Load (0.7ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.9ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 5]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.6ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 6]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.5ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.9ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 9]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (97.48ms)
+Completed 200 OK in 146ms (Views: 129.7ms | ActiveRecord: 19.2ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1347200930821886805);[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1347200930821886805)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 21:04:31 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mLikedMedium Load (0.9ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.8ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.5ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 5]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.5ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 6]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.8ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (2.8ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 9]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (93.67ms)
+Completed 200 OK in 145ms (Views: 127.5ms | ActiveRecord: 21.3ms)
+
+
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mLikedMedium Load (0.5ms)[0m  [1m[34mSELECT  "likes".* FROM "likes" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", 9], ["LIMIT", 11]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMedium Load (0.7ms)[0m  [1m[34mSELECT  "media".* FROM "media" WHERE "media"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (73.0ms)[0m  [1m[32mINSERT INTO "likes" ("user_id", "medium_id") VALUES ($1, $2)[0m  [["user_id", 9], ["medium_id", 5]]
+  [1m[35m (48.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1 LIMIT $2[0m  [["medium_id", 5], ["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "dislikes" ("user_id", "medium_id") VALUES ($1, $2)[0m  [["user_id", 9], ["medium_id", 5]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1 LIMIT $2[0m  [["medium_id", 5], ["LIMIT", 11]]
+Started GET "/api/users" for 127.0.0.1 at 2017-07-23 21:11:59 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mLikedMedium Load (0.6ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.5ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.5ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   [1m[36mLikedMedium Load (2.8ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 5]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.9ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 6]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.8ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (1.1ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.6ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 9]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (150.29ms)
+Completed 200 OK in 261ms (Views: 239.9ms | ActiveRecord: 24.3ms)
+
+
+Started GET "/api/users/9" for 127.0.0.1 at 2017-07-23 21:12:10 +0100
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"9", "user"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (19.98ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 12.8ms)
+
+
+  
+NoMethodError (undefined method `media_created' for #<User:0x007fcaaeab14d8>
+Did you mean?  medium_created
+               medium_created=):
+  
+app/controllers/users_controller.rb:13:in `show'
+Started GET "/api/users/" for 127.0.0.1 at 2017-07-23 21:12:15 +0100
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mLikedMedium Load (0.5ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.8ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.7ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 5]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 6]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.7ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 9]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (41.09ms)
+Completed 200 OK in 45ms (Views: 39.0ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/api/users/" for 127.0.0.1 at 2017-07-23 21:12:49 +0100
+Processing by UsersController#index as */*
+  Parameters: {"id"=>9, "user"=>{"id"=>9}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.5ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 5]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.8ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 6]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 9]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (32.07ms)
+Completed 200 OK in 39ms (Views: 34.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/api/users/" for 127.0.0.1 at 2017-07-24 09:21:01 +0100
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.5ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.6ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 5]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 6]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 9]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (94.96ms)
+Completed 200 OK in 123ms (Views: 109.0ms | ActiveRecord: 20.3ms)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMedium Load (0.5ms)[0m  [1m[34mSELECT  "media".* FROM "media" ORDER BY "media"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mDislikedMedium Load (0.6ms)[0m  [1m[34mSELECT  "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1 LIMIT $2[0m  [["user_id", 9], ["LIMIT", 11]]
+Started GET "/api/users/" for 127.0.0.1 at 2017-07-24 09:26:05 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mLikedMedium Load (0.8ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 5]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 6]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.8ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 9]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (95.99ms)
+Completed 200 OK in 285ms (Views: 267.9ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/api/users/" for 127.0.0.1 at 2017-07-24 09:28:01 +0100
+Started GET "/api/users/" for 127.0.0.1 at 2017-07-24 09:28:20 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mLikedMedium Load (1.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.8ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.9ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.4ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.4ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] No serializer found for resource: #<DislikedMedium user_id: 3, medium_id: 4>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.4ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 5]]
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.4ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 5]]
+[active_model_serializers] No serializer found for resource: #<DislikedMedium user_id: 5, medium_id: 5>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 6]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.4ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 6]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.6ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.3ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 9]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.5ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 9]]
+[active_model_serializers] No serializer found for resource: #<DislikedMedium user_id: 9, medium_id: 5>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<DislikedMedium user_id: 3, medium_id: 4>
+[active_model_serializers] No serializer found for resource: #<DislikedMedium user_id: 5, medium_id: 5>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<DislikedMedium user_id: 9, medium_id: 5>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (199.09ms)
+Completed 200 OK in 287ms (Views: 262.3ms | ActiveRecord: 27.7ms)
+
+
+Started GET "/api/users/" for 127.0.0.1 at 2017-07-24 09:30:15 +0100
+Started GET "/api/users/" for 127.0.0.1 at 2017-07-24 09:30:36 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.23ms)
+Completed 200 OK in 89ms (Views: 80.4ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/api/users/" for 127.0.0.1 at 2017-07-24 09:31:20 +0100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mLikedMedium Load (0.7ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.8ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.4ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.4ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] No serializer found for resource: #<DislikedMedium user_id: 3, medium_id: 4>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.6ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.4ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 5]]
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.4ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 5]]
+[active_model_serializers] No serializer found for resource: #<DislikedMedium user_id: 5, medium_id: 5>
+[active_model_serializers]   [1m[36mLikedMedium Load (0.4ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 6]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.4ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 6]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.7ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.3ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers]   [1m[36mLikedMedium Load (0.3ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = $1[0m  [["user_id", 9]]
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.3ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 9]]
+[active_model_serializers] No serializer found for resource: #<DislikedMedium user_id: 9, medium_id: 5>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 1, medium_id: 6>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 3, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<DislikedMedium user_id: 3, medium_id: 4>
+[active_model_serializers] No serializer found for resource: #<DislikedMedium user_id: 5, medium_id: 5>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 6, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 7, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 8, medium_id: 1>
+[active_model_serializers] No serializer found for resource: #<LikedMedium user_id: 9, medium_id: 3>
+[active_model_serializers] No serializer found for resource: #<DislikedMedium user_id: 9, medium_id: 5>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (279.93ms)
+Completed 200 OK in 434ms (Views: 407.5ms | ActiveRecord: 30.6ms)
+
+
+Started GET "/api/users/" for 127.0.0.1 at 2017-07-24 09:35:54 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.9ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.9ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 2]]
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.4ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 3]]
+[active_model_serializers] No serializer found for resource: #<DislikedMedium user_id: 3, medium_id: 4>
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.7ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 4]]
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.6ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 5]]
+[active_model_serializers] No serializer found for resource: #<DislikedMedium user_id: 5, medium_id: 5>
+[active_model_serializers]   [1m[36mDislikedMedium Load (2.1ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 6]]
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.4ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 7]]
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.3ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 8]]
+[active_model_serializers]   [1m[36mDislikedMedium Load (0.6ms)[0m  [1m[34mSELECT "dislikes".* FROM "dislikes" WHERE "dislikes"."user_id" = $1[0m  [["user_id", 9]]
+[active_model_serializers] No serializer found for resource: #<DislikedMedium user_id: 9, medium_id: 5>
+[active_model_serializers] No serializer found for resource: #<DislikedMedium user_id: 3, medium_id: 4>
+[active_model_serializers] No serializer found for resource: #<DislikedMedium user_id: 5, medium_id: 5>
+[active_model_serializers] No serializer found for resource: #<DislikedMedium user_id: 9, medium_id: 5>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (132.88ms)
+Completed 200 OK in 210ms (Views: 192.5ms | ActiveRecord: 21.0ms)
+
+
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1347200930821886805);[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateJoinTableUserMediaDislikes (20170723111450)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (37.2ms)[0m  [1m[35mDROP TABLE "dislikes"[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20170723111450"]]
+  [1m[35m (53.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJoinTableUserMediaLikes (20170723111449)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.8ms)[0m  [1m[35mDROP TABLE "likes"[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20170723111449"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJoinTableUserMedia (20170723111442)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[35mDROP TABLE "saved_medium"[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20170723111442"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1347200930821886805)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1347200930821886805);[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateJoinTableUserMedia (20170723111442)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "saves" ("user_id" bigint NOT NULL, "medium_id" bigint NOT NULL)[0m
+  [1m[35m (31.7ms)[0m  [1m[35mCREATE  INDEX  "index_saves_on_user_id_and_medium_id" ON "saves"  ("user_id", "medium_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_saves_on_medium_id_and_user_id" ON "saves"  ("medium_id", "user_id")[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170723111442"]]
+  [1m[35m (16.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJoinTableUserMediaLikes (20170723111449)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "likes" ("user_id" bigint NOT NULL, "medium_id" bigint NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_likes_on_user_id_and_medium_id" ON "likes"  ("user_id", "medium_id")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_likes_on_medium_id_and_user_id" ON "likes"  ("medium_id", "user_id")[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170723111449"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJoinTableUserMediaDislikes (20170723111450)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "dislikes" ("user_id" bigint NOT NULL, "medium_id" bigint NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_dislikes_on_user_id_and_medium_id" ON "dislikes"  ("user_id", "medium_id")[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE  INDEX  "index_dislikes_on_medium_id_and_user_id" ON "dislikes"  ("medium_id", "user_id")[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170723111450"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1347200930821886805)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (48.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (100.3ms)[0m  [1m[35mTRUNCATE users RESTART IDENTITY CASCADE[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "firstname", "lastname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "mickyginger"], ["firstname", "Mike"], ["lastname", "Hayden"], ["created_at", "2017-07-24 08:55:27.566750"], ["updated_at", "2017-07-24 08:55:27.566750"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "firstname", "lastname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "eisacke"], ["firstname", "Emily"], ["lastname", "Isacke"], ["created_at", "2017-07-24 08:55:27.571863"], ["updated_at", "2017-07-24 08:55:27.571863"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "firstname", "lastname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "markyjangles"], ["firstname", "Marc"], ["lastname", "De Vois"], ["created_at", "2017-07-24 08:55:27.577035"], ["updated_at", "2017-07-24 08:55:27.577035"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (26.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1347200930821886805);[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateJoinTableUserMediaDislikes (20170723111450)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.3ms)[0m  [1m[35mDROP TABLE "dislikes"[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20170723111450"]]
+  [1m[35m (23.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJoinTableUserMediaLikes (20170723111449)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (17.1ms)[0m  [1m[35mDROP TABLE "likes"[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20170723111449"]]
+  [1m[35m (39.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJoinTableUserMedia (20170723111442)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.9ms)[0m  [1m[35mDROP TABLE "saves"[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20170723111442"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMedia (20170721144743)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (64.7ms)[0m  [1m[35mDROP TABLE "media"[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20170721144743"]]
+  [1m[35m (44.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(1347200930821886805)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1347200930821886805);[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMedia (20170721144743)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (267.8ms)[0m  [1m[35mCREATE TABLE "media" ("id" bigserial primary key, "tmdb_id" integer, "name" character varying, "overview" character varying, "poster_path" character varying, "first_air_date" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_3e7fe89c9c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (24.1ms)[0m  [1m[35mCREATE  INDEX  "index_media_on_user_id" ON "media"  ("user_id")[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170721144743"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJoinTableUserMedia (20170723111442)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "saves" ("user_id" bigint NOT NULL, "medium_id" bigint NOT NULL)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_saves_on_user_id_and_medium_id" ON "saves"  ("user_id", "medium_id")[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE  INDEX  "index_saves_on_medium_id_and_user_id" ON "saves"  ("medium_id", "user_id")[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170723111442"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJoinTableUserMediaLikes (20170723111449)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "likes" ("user_id" bigint NOT NULL, "medium_id" bigint NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE  INDEX  "index_likes_on_user_id_and_medium_id" ON "likes"  ("user_id", "medium_id")[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX  "index_likes_on_medium_id_and_user_id" ON "likes"  ("medium_id", "user_id")[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170723111449"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJoinTableUserMediaDislikes (20170723111450)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.5ms)[0m  [1m[35mCREATE TABLE "dislikes" ("user_id" bigint NOT NULL, "medium_id" bigint NOT NULL)[0m
+  [1m[35m (43.5ms)[0m  [1m[35mCREATE  INDEX  "index_dislikes_on_user_id_and_medium_id" ON "dislikes"  ("user_id", "medium_id")[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE  INDEX  "index_dislikes_on_medium_id_and_user_id" ON "dislikes"  ("medium_id", "user_id")[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170723111450"]]
+  [1m[35m (27.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(1347200930821886805)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (90.2ms)[0m  [1m[35mTRUNCATE users RESTART IDENTITY CASCADE[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "firstname", "lastname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "mickyginger"], ["firstname", "Mike"], ["lastname", "Hayden"], ["created_at", "2017-07-24 08:59:18.683639"], ["updated_at", "2017-07-24 08:59:18.683639"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "firstname", "lastname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "eisacke"], ["firstname", "Emily"], ["lastname", "Isacke"], ["created_at", "2017-07-24 08:59:18.687282"], ["updated_at", "2017-07-24 08:59:18.687282"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "firstname", "lastname", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "markyjangles"], ["firstname", "Marc"], ["lastname", "De Vois"], ["created_at", "2017-07-24 08:59:18.689979"], ["updated_at", "2017-07-24 08:59:18.689979"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (49.2ms)[0m  [1m[32mINSERT INTO "media" ("name", "overview", "first_air_date", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "300"], ["overview", "bla bla bla"], ["first_air_date", "2014-07-13"], ["user_id", 1], ["created_at", "2017-07-24 08:59:18.727804"], ["updated_at", "2017-07-24 08:59:18.727804"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "media" ("name", "overview", "first_air_date", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Gladiator"], ["overview", "bla bla bla"], ["first_air_date", "2013-04-11"], ["user_id", 2], ["created_at", "2017-07-24 08:59:18.780455"], ["updated_at", "2017-07-24 08:59:18.780455"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "media" ("name", "overview", "first_air_date", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Kingdom Of Heaven"], ["overview", "bla bla bla"], ["first_air_date", "2012-02-02"], ["user_id", 3], ["created_at", "2017-07-24 08:59:18.784509"], ["updated_at", "2017-07-24 08:59:18.784509"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMedium Load (0.9ms)[0m  [1m[34mSELECT  "media".* FROM "media" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mMedium Load (0.9ms)[0m  [1m[34mSELECT  "media".* FROM "media" ORDER BY "media"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMedium Load (1.0ms)[0m  [1m[34mSELECT  "media".* FROM "media" ORDER BY "media"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMedium Load (0.7ms)[0m  [1m[34mSELECT  "media".* FROM "media" ORDER BY "media"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (14.2ms)[0m  [1m[32mINSERT INTO "likes" ("user_id", "medium_id") VALUES ($1, $2)[0m  [["user_id", 1], ["medium_id", 3]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1 LIMIT $2[0m  [["medium_id", 3], ["LIMIT", 11]]
+  [1m[36mMedium Load (0.6ms)[0m  [1m[34mSELECT  "media".* FROM "media" WHERE "media"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1[0m  [["medium_id", 3]]
+  [1m[36mMedium Load (0.8ms)[0m  [1m[34mSELECT  "media".* FROM "media" WHERE "media"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (24.8ms)[0m  [1m[32mINSERT INTO "dislikes" ("user_id", "medium_id") VALUES ($1, $2)[0m  [["user_id", 1], ["medium_id", 2]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1 LIMIT $2[0m  [["medium_id", 2], ["LIMIT", 11]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1[0m  [["medium_id", 2]]
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (43.4ms)[0m  [1m[32mINSERT INTO "saves" ("user_id", "medium_id") VALUES ($1, $2)[0m  [["user_id", 1], ["medium_id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMedium Load (0.8ms)[0m  [1m[34mSELECT  "media".* FROM "media" INNER JOIN "saves" ON "media"."id" = "saves"."medium_id" WHERE "saves"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "saves" ("user_id", "medium_id") VALUES ($1, $2)[0m  [["user_id", 1], ["medium_id", 2]]
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMedium Load (1.1ms)[0m  [1m[34mSELECT  "media".* FROM "media" INNER JOIN "saves" ON "media"."id" = "saves"."medium_id" WHERE "saves"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mMedium Load (1.8ms)[0m  [1m[34mSELECT  "media".* FROM "media" INNER JOIN "saves" ON "media"."id" = "saves"."medium_id" WHERE "saves"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[36mMedium Load (1.1ms)[0m  [1m[34mSELECT "media".* FROM "media" INNER JOIN "saves" ON "media"."id" = "saves"."medium_id" WHERE "saves"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "saves" ("user_id", "medium_id") VALUES ($1, $2)[0m  [["user_id", 1], ["medium_id", 2]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "saves" ("user_id", "medium_id") VALUES ($1, $2)[0m  [["user_id", 1], ["medium_id", 2]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMedium Load (0.8ms)[0m  [1m[34mSELECT  "media".* FROM "media" WHERE "media"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMedium Load (1.7ms)[0m  [1m[34mSELECT  "media".* FROM "media" INNER JOIN "saves" ON "media"."id" = "saves"."medium_id" WHERE "saves"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMedium Load (1.3ms)[0m  [1m[34mSELECT  "media".* FROM "media" INNER JOIN "saves" ON "media"."id" = "saves"."medium_id" WHERE "saves"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "saves" ("user_id", "medium_id") VALUES ($1, $2)[0m  [["user_id", 1], ["medium_id", 2]]
+  [1m[35m (40.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "saves" ON "users"."id" = "saves"."user_id" WHERE "saves"."medium_id" = $1 LIMIT $2[0m  [["medium_id", 2], ["LIMIT", 11]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "saves" ("user_id", "medium_id") VALUES ($1, $2)[0m  [["user_id", 1], ["medium_id", 2]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "saves" ON "users"."id" = "saves"."user_id" WHERE "saves"."medium_id" = $1 LIMIT $2[0m  [["medium_id", 2], ["LIMIT", 11]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "saves" ("user_id", "medium_id") VALUES ($1, $2)[0m  [["user_id", 1], ["medium_id", 2]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "saves" ON "users"."id" = "saves"."user_id" WHERE "saves"."medium_id" = $1 LIMIT $2[0m  [["medium_id", 2], ["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "saves" ("user_id", "medium_id") VALUES ($1, $2)[0m  [["user_id", 1], ["medium_id", 2]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" INNER JOIN "saves" ON "users"."id" = "saves"."user_id" WHERE "saves"."medium_id" = $1 LIMIT $2[0m  [["medium_id", 2], ["LIMIT", 11]]
+  [1m[36mMedium Load (0.9ms)[0m  [1m[34mSELECT  "media".* FROM "media" WHERE "media"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMedium Exists (24.6ms)[0m  [1m[34mSELECT  1 AS one FROM "media" INNER JOIN "saves" ON "media"."id" = "saves"."medium_id" WHERE "saves"."user_id" = $1 AND "media"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMedium Load (0.7ms)[0m  [1m[34mSELECT  "media".* FROM "media" WHERE "media"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMedium Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "media" INNER JOIN "saves" ON "media"."id" = "saves"."medium_id" WHERE "saves"."user_id" = $1 AND "media"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMedium Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "media" INNER JOIN "likes" ON "media"."id" = "likes"."medium_id" WHERE "likes"."user_id" = $1 AND "media"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 2], ["LIMIT", 1]]
+  [1m[36mMedium Exists (42.4ms)[0m  [1m[34mSELECT  1 AS one FROM "media" INNER JOIN "dislikes" ON "media"."id" = "dislikes"."medium_id" WHERE "dislikes"."user_id" = $1 AND "media"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMedium Load (0.5ms)[0m  [1m[34mSELECT  "media".* FROM "media" WHERE "media"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMedium Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "media" INNER JOIN "saves" ON "media"."id" = "saves"."medium_id" WHERE "saves"."user_id" = $1 AND "media"."id" = $2 LIMIT $3[0m  [["user_id", 1], ["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMedium Load (0.6ms)[0m  [1m[34mSELECT  "media".* FROM "media" WHERE "media"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMedium Load (0.5ms)[0m  [1m[34mSELECT  "media".* FROM "media" WHERE "media"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (44.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "saves" ON "users"."id" = "saves"."user_id" WHERE "saves"."medium_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["medium_id", 2], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "likes" ON "users"."id" = "likes"."user_id" WHERE "likes"."medium_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["medium_id", 2], ["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["medium_id", 2], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "dislikes" ON "users"."id" = "dislikes"."user_id" WHERE "dislikes"."medium_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["medium_id", 2], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
