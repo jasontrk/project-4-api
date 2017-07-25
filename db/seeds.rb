@@ -2,13 +2,42 @@
   ActiveRecord::Base.connection.execute("TRUNCATE #{model.table_name} RESTART IDENTITY CASCADE")
 end
 
-users = User.create!([
-  { username: "srilankandenzel", firstname: "SL", lastname: "Denzel" },
-  { username: "mickyginger", firstname: "Mike", lastname: "Hayden" },
-  { username: "eisacke", firstname: "Emily", lastname: "Isacke" },
-  { username: "markyjangles", firstname: "Marc", lastname: "De Vois" },
-  { username: "gilfoyle", firstname: "Jack", lastname: "May" }
-  ])
+users = User.create!([{
+  username: "srilankandenzel",
+  firstname: "SL",
+  lastname: "Denzel",
+  email: "denzel@denzel.co",
+  password: "password",
+  password_confirmation: "password"
+  },{
+  username: "mickyginger",
+  firstname: "Mike",
+  lastname: "Hayden",
+  email: "mike@mike.co",
+  password: "password",
+  password_confirmation: "password"
+  },{
+  username: "eisacke",
+  firstname: "Emily",
+  lastname: "Isacke",
+  email: "emily@emily.co",
+  password: "password",
+  password_confirmation: "password"
+  },{
+  username: "markyjangles",
+  firstname: "Mark",
+  lastname: "Davis",
+  email: "mark@mark.co",
+  password: "password",
+  password_confirmation: "password"
+  },{
+  username: "gilfoyle",
+  firstname: "Jack",
+  lastname: "May",
+  email: "jack@jack.co",
+  password: "password",
+  password_confirmation: "password"
+  }])
 
   Medium.create!([{
     name: "Dawn of the Planet of the Apes", release_date: Date.new(2014, 6, 26),
@@ -36,7 +65,7 @@ users = User.create!([
     creator: users[1]
   },{
     name: "Frozen", release_date: Date.new(2013, 11, 27),
-    overview: "Young princess Anna of Arendelle dreams about finding true love at her sister Elsa’s coronation. Fate takes her on a dangerous journey in an attempt to end the eternal winter that has fallen over the kingdom. She's accompanied by ice delivery man Kristoff, his reindeer Sven, and snowman Olaf. On an adventure where she will find out what friendship, courage, family, and true love really means.",
+    overview: "Young princess Anna of Arendelle dreams about finding true love at her sister Elsa's coronation. Fate takes her on a dangerous journey in an attempt to end the eternal winter that has fallen over the kingdom. She's accompanied by ice delivery man Kristoff, his reindeer Sven, and snowman Olaf. On an adventure where she will find out what friendship, courage, family, and true love really means",
     poster_path: "https://image.tmdb.org/t/p/w92/jIjdFXKUNtdf1bwqMrhearpyjMj.jpg",
     genre_ids: [10751, 16, 12],
     creator: users[1]
