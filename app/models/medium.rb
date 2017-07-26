@@ -6,12 +6,12 @@ class Medium < ApplicationRecord
 
   def check_for_liked(user)
     raise 'User has already liked' if likes.include? user
-    raise 'User cannot like AND dislike' if dislikes.include? user
+    # raise 'User cannot like AND dislike' if dislikes.include? user
   end
 
   def check_for_disliked(user)
     raise 'User has already disliked' if dislikes.include? user
-    raise 'User cannot like AND dislike' if likes.include? user
+    # raise 'User cannot like AND dislike' if likes.include? user
   end
 
   def check_for_faved(user)

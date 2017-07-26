@@ -24,7 +24,7 @@ class MediaController < ApplicationController
 
       @medium = Medium.new(medium_params)
       @medium.creator = current_user
-      
+
       if @medium.save
         render json: @medium, status: :created, location: @medium
       else
@@ -59,6 +59,6 @@ class MediaController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def medium_params
-      params.permit(:tmdb_id, :name, :user_id, :overview, :poster_path, :first_air_date, :release_date, genre_ids:[], likes_ids:[], dislikes_ids:[], saves_ids:[] )
+      params.permit(:tmdb_id, :name, :user_id, :overview, :poster_path, :first_air_date, :release_date, genre_ids:[], like_ids:[], dislike_ids:[], fave_ids:[] )
     end
 end
