@@ -13,15 +13,28 @@ class MediaController < ApplicationController
     render json: @medium
   end
 
+  def exisiting_medium
+    Medium.find_by tmdb_id: params[:tmdb_id]
+  end
+
   # POST /media
   def create
-    @medium = Medium.new(medium_params)
 
-    if @medium.save
-      render json: @medium, status: :created, location: @medium
+    if !exisiting_medium
+
+      @medium = Medium.new(medium_params)
+      @medium.creator = current_user
+      
+      if @medium.save
+        render json: @medium, status: :created, location: @medium
+      else
+        render json: @medium.errors, status: :unprocessable_entity
+      end
+
     else
-      render json: @medium.errors, status: :unprocessable_entity
+      render json: exisiting_medium
     end
+
   end
 
   # PATCH/PUT /media/1
@@ -46,6 +59,6 @@ class MediaController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def medium_params
-      params.require(:medium).permit(:tmdb_id, :name, :overview, :poster_path, :first_air_date, :release_date, genre_ids:[], likes_ids:[], dislikes_ids:[], saves_ids:[] )
+      params.permit(:tmdb_id, :name, :user_id, :overview, :poster_path, :first_air_date, :release_date, genre_ids:[], likes_ids:[], dislikes_ids:[], saves_ids:[] )
     end
 end
