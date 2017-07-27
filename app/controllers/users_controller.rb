@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :update, :destroy]
+  # skip_before_action :authenticate_user!
 
   # GET /users
   def index
@@ -10,7 +11,7 @@ class UsersController < ApplicationController
 
   # GET /users/1
   def show
-    render json: @user
+    render json: @user, include: ['liked_media.likes', 'disliked_media.dislikes']
   end
 
   # POST /users

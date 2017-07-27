@@ -4,7 +4,7 @@ class User < ApplicationRecord
   validates :email, uniqueness: true, presence: true
   validates :firstname, presence: true
 
-  has_many :created_media, class_name: "Medium", foreign_key: "user_id"
+  has_many :created_media, class_name: "Medium", foreign_key: "user_id", dependent: :destroy
   has_and_belongs_to_many :liked_media, class_name: "Medium", join_table: "likes", before_add: :check_for_liked
   has_and_belongs_to_many :disliked_media, class_name: "Medium", join_table: "dislikes", before_add: :check_for_disliked
   has_and_belongs_to_many :faved_media, class_name: "Medium", join_table: "saves", before_add: :check_for_faved
