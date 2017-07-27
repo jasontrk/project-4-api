@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'tmdb/movie'
-
   scope :api do
     resources :media
     resources :users
